@@ -171,6 +171,20 @@ document.write(calc(5, 61));
 // console.log(person.isMaried);
 // console.log(person["name"]);
 
+let options = {
+  width: 1024,
+  heigh: 1024,
+  name: 'test'
+};
+console.log(options.width);
+options.bool = false; //добавляем в объект
+options.color = {
+  border: 'black',
+  bg:     'red'
+};
+delete options.bool; //удаляем из объекта
+console.log(options);
+
 // вся информация от пользователя приходит в виде строк
 // вне зависимости от того как мы ее получили, проверяем на тип вводимых данных
 //если перед значением представаленным строкой поставить + то она обратится в числовой тип данных
